@@ -168,6 +168,9 @@
         // 뱀 이동
         function moveSnake() {
             if (!gameRunning) return;
+            
+            // 아직 움직이지 않은 상태면 이동하지 않음
+            if (dx === 0 && dy === 0) return;
 
             const head = {x: snake[0].x + dx, y: snake[0].y + dy};
 
