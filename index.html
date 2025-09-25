@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>스네이크 게임</title>
+    <title>Snake Game</title>
     <style>
         body {
             margin: 0;
@@ -87,18 +87,18 @@
 </head>
 <body>
     <div class="game-container">
-        <h1>🐍 스네이크 게임</h1>
-        <div class="score">점수: <span id="score">0</span></div>
+        <h1>🐍 Snake Game</h1>
+        <div class="score">Score: <span id="score">0</span></div>
         <canvas id="gameCanvas" width="400" height="400"></canvas>
         <div class="controls">
-            방향키로 조작하세요 | 사과를 먹어서 점수를 올리세요!
+            Use Arrow key to move Snake | and eat Apple 
         </div>
     </div>
     
     <div class="game-over" id="gameOver">
-        <div>게임 오버!</div>
-        <div>최종 점수: <span id="finalScore">0</span></div>
-        <button onclick="restartGame()">다시 시작</button>
+        <div>Game Over!</div>
+        <div>Total Score <span id="finalScore">0</span></div>
+        <button onclick="restartGame()">Restart</button>
     </div>
 
     <script>
